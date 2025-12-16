@@ -11,7 +11,8 @@ import SwiftUI
 struct FoundationAppApp: App {
     var body: some Scene {
         WindowGroup {
-            LoadingPage()
+            
+            LoadingPage(onComplete: {})
         }
     }
 }
