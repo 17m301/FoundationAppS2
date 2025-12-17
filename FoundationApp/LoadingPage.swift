@@ -31,15 +31,12 @@ struct LoadingPage: View {
             */
             Color.black.ignoresSafeArea()
             VStack {
-                Image(systemName: "moon.stars.fill")
+                Image("Logo")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 100)
+                    .frame(width: 400)
                     .foregroundStyle(.linearGradient(colors: [.cyan, .purple], startPoint: .top, endPoint: .bottom))
                 
-                Text("Mooner")
-                    .font(.system(size: 40, weight: .bold, design: .rounded))
-                    .foregroundStyle(.white)
             }
             .scaleEffect(scale)
             .opacity(opacity)
